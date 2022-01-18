@@ -1,4 +1,4 @@
-profiles: [{
+{ "profiles": [{
              "id": "1",
              "accountNickname": "Вадим",
              "roleId": "3",
@@ -27,4 +27,4 @@ profiles: [{
 
 
 
-]
+]}

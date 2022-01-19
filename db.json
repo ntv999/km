@@ -1,24 +1,24 @@
 { "profiles": [{
-             "id": "1",
+             "id": 1,
              "accountNickname": "Вадим",
-             "roleId": "3",
+             "roleId": 3,
              "lastActivity": {
                 "date": "18.01.22 15:55",
                 "gate": {
-                    "id": "33",
+                    "id": 3,
                     "name": "Door"
                 }
              }
         },
 
           {
-             "id": "2",
+             "id": 2,
              "accountNickname": "Ваddдим",
-             "roleId": "3",
+             "roleId": 3,
              "lastActivity": {
                 "date": "18.01.22 13:55",
                 "gate": {
-                    "id": "34",
+                    "id": 34,
                     "name": "1Door"
                 }
              }

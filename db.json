@@ -24,6 +24,7 @@
                     "name": "Office"
                 }
              }
+          },
          {
              "id": 2,
              "accountNickname": "Иван Петров",
@@ -35,7 +36,7 @@
                     "id": 34,
                     "name": "Main"
                 }
-             }
+          }
         }
 
 

@@ -1,0 +1,128 @@
+{ "profiles": [{
+             "id": 1,
+             "firstname": "Вадим",
+             "lastname": "Апанович",
+             "phone": "+375291114433",
+             "roomNumber": "95",
+             "roleId": 3,
+             "lastActivity": {
+                "date": "18.01.22 15:55",
+                "gate": {
+                    "id": 3,
+                    "name": "Задняя дверь"
+                }
+             },
+             "creationTime": "18.10.21 13:56"
+             
+        },
+        
+            {
+             "id": 2,
+             "firstname": "Иван",
+             "lastname": "Козлов",
+             "phone": "+375293334433",
+             "roomNumber": "45",
+             "roleId": 3,
+             "lastActivity": {
+                "date": "11.01.22 15:55",
+                "gate": {
+                    "id": 2,
+                    "name": "Парадная дверь"
+                }
+             },
+             "creationTime": "18.10.21 12:56"
+             
+        }, 
+        
+            {
+             "id": 3,
+             "firstname": "Людмила",
+             "lastname": "Апанович",
+             "phone": "+375291624433",
+             "roomNumber": "95",
+             "roleId": 3,
+             "lastActivity": {
+                "date": "18.01.22 13:55",
+                "gate": {
+                    "id": 2,
+                    "name": "Парадная дверь"
+                }
+             },
+             "creationTime": "18.11.21 13:56"
+             
+        },
+        
+            {
+             "id": 4,
+             "firstname": "Юрий",
+             "lastname": "Дашкевич",
+             "phone": "+375291478933",
+             "roomNumber": "17",
+             "roleId": 3,
+             "lastActivity": {
+                "date": "19.01.22 15:25",
+                "gate": {
+                    "id": 3,
+                    "name": "Задняя дверь"
+                }
+             },
+             "creationTime": "18.12.21 13:56"
+             
+        },
+        
+            {
+             "id": 5,
+             "firstname": "Иван",
+             "lastname": "Збралевич",
+             "phone": "+375291987453",
+             "roomNumber": "1",
+             "roleId": 3,
+             "lastActivity": {
+                "date": "18.01.22 15:55",
+                "gate": {
+                    "id": 3,
+                    "name": "Задняя дверь"
+                }
+             },
+             "creationTime": "18.10.21 13:56"
+             
+        },
+        
+            {
+             "id": 6,
+             "firstname": "Игорь",
+             "lastname": "Никитенко",
+             "phone": "+375291987633",
+             "roomNumber": "85",
+             "roleId": 3,
+             "lastActivity": {
+                "date": "18.01.22 15:55",
+                "gate": {
+                    "id": 3,
+                    "name": "Задняя дверь"
+                }
+             },
+             "creationTime": "18.10.21 13:56"
+             
+        },
+        
+            {
+             "id": 7,
+             "firstname": "Аркадий",
+             "lastname": "Мамонтов",
+             "phone": "+375295554433",
+             "roomNumber": "25",
+             "roleId": 3,
+             "lastActivity": {
+                "date": "18.01.22 15:55",
+                "gate": {
+                    "id": 3,
+                    "name": "Задняя дверь"
+                }
+             },
+             "creationTime": "18.10.21 13:56"
+             
+        }
+        
+]}        
+        

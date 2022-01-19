@@ -16,7 +16,7 @@
              "id": 2,
              "accountNickname": "Кирилл",
               "phone": "+375291114333",
-             "roleId": 3,
+             "roleId": 2,
              "lastActivity": {
                 "date": "18.01.22 13:55",
                 "gate": {
@@ -29,7 +29,7 @@
              "id": 3,
              "accountNickname": "Иван Петров",
               "phone": "+375291132333",
-             "roleId": 3,
+             "roleId": 1,
              "lastActivity": {
                 "date": "11.01.22 13:55",
                 "gate": {

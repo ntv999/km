@@ -37,7 +37,48 @@
                     "name": "Main"
                 }
           }
-        }
+        },
+               
+        {
+             "id": 4,
+             "accountNickname": "Клименков П.А.",
+             "phone": "+375291121433", 
+             "roleId": 3,
+             "lastActivity": {
+                "date": "18.01.22 15:55",
+                "gate": {
+                    "id": 3,
+                    "name": "Door"
+                }
+             }
+        },
+
+          {
+             "id": 5,
+             "accountNickname": "Кириленко А.",
+              "phone": "+375291114333",
+             "roleId": 2,
+             "lastActivity": {
+                "date": "18.01.22 13:55",
+                "gate": {
+                    "id": 34,
+                    "name": "Office"
+                }
+             }
+          },
+         {
+             "id": 6,
+             "accountNickname": "Иван Петров",
+              "phone": "+375291132333",
+             "roleId": 1,
+             "lastActivity": {
+                "date": "11.01.22 13:55",
+                "gate": {
+                    "id": 34,
+                    "name": "Main"
+                }
+          }
+        }       
 
 
 

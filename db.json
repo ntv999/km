@@ -1,7 +1,7 @@
 { "profiles": [{
              "id": 1,
              "accountNickname": "Вадим",
-             "phone": "+375291114433" 
+             "phone": "+375291114433", 
              "roleId": 3,
              "lastActivity": {
                 "date": "18.01.22 15:55",
@@ -15,7 +15,7 @@
           {
              "id": 2,
              "accountNickname": "Кирилл",
-              "phone": "+375291114333"
+              "phone": "+375291114333",
              "roleId": 3,
              "lastActivity": {
                 "date": "18.01.22 13:55",
@@ -27,7 +27,7 @@
          {
              "id": 2,
              "accountNickname": "Иван Петров",
-              "phone": "+375291132333"
+              "phone": "+375291132333",
              "roleId": 3,
              "lastActivity": {
                 "date": "11.01.22 13:55",

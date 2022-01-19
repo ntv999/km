@@ -16,14 +16,8 @@
              "id": 2,
              "accountNickname": "Кирилл",
               "phone": "+375291114333",
-             "roleId": 2,
-             "lastActivity": {
-                "date": "18.01.22 13:55",
-                "gate": {
-                    "id": 34,
-                    "name": "Office"
-                }
-             }
+             "roleId": 2
+             
           },
          {
              "id": 3,

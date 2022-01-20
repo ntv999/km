@@ -124,5 +124,27 @@
              
         }
         
-]}        
+]},
+
+{ "controllers": [{
+			"id": "CACA",
+			"profile": {
+    			"id": "4343",
+    			"controllerNickname": "43434",
+    			"roleId": 3
+			},
+			"numOfGates": 4
+			},
+			
+			{
+			"id": "CACA-FF",
+			"profile": {
+    			"id": "4343",
+    			"controllerNickname": "43434",
+    			"roleId": 3
+			},
+			"numOfGates": 2
+			}
+			
+]}			
         

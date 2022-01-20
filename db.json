@@ -106,7 +106,7 @@
              
         },
         
-            {
+        {
              "id": 7,
              "firstname": "Аркадий",
              "lastname": "Мамонтов",
@@ -124,9 +124,9 @@
              
         }
         
-]},
+],
 
-{ "controllers": [{
+ "controllers": [{
 			"id": "CACA",
 			"profile": {
     			"id": "4343",
@@ -146,5 +146,8 @@
 			"numOfGates": 2
 			}
 			
-]}			
+]
+  
+  
+}			
         

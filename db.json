@@ -151,17 +151,17 @@
 ],
  
 "gates": [{ 
-			"gate": {
-				"id": 1,
+			
+				  "id": 1,
     			"name": "Door",
     			"state": 2,
     			"isOnline": true,
     			
     			"relay": 2
-			}
+			
   },
   { 
-			"gate": {
+			
 				"id": 2,
     			"name": "Door",
     			"state": 2,
@@ -169,7 +169,7 @@
     			
     			"relay": 2
 			}
-  }
+  
   ] 
   
   

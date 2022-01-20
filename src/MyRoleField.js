@@ -1,8 +1,7 @@
 // in src/MyUrlField.js
-import * as React from "react";
 import { useRecordContext } from 'react-admin';
 
-const MyUrlField = ({ source }) => {
+const MyRoleField = ({ source }) => {
     const record = useRecordContext();
     switch (record[source]) {
         case 1:
@@ -20,4 +19,4 @@ const MyUrlField = ({ source }) => {
     
 }
 
-export default MyUrlField;
+export default MyRoleField;

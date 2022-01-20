@@ -15,10 +15,9 @@ import {
     
 } from 'react-admin';
 
-const validateFirstName = [required(), minLength(2), maxLength(15)];
-const validateLastName = [required(), minLength(2), maxLength(15)];
+const validateName = [required(), minLength(2), maxLength(15)];
 const validateRoomNumber = [number(), maxLength(4)];
-const validatePhone = [required(), regex(/^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/ , 'Must be a valid Phone Number')];
+const validatePhone = [required(),minLength(13), maxLength(13), regex(/^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/ , 'Введите номер в формате +375..')];
 
 const UserTitle = ({ record }) => {
     return <span>Пользователь: {record ? `${record.lastname}` : ''}</span>;
@@ -91,10 +90,10 @@ export const UserEdit = props => (
     <Edit title={<UserTitle />} {...props}>
         <SimpleForm>
              <TextInput disabled source="id" label="ID"/>
-            <TextInput source="firstname" label="Имя"/>
-            <TextInput source="lastname" label="Фамилия"/>
-            <TextInput source="phone" label="Телефон"/>
-            <TextInput source="roomNumber" label="Помещение" />
+            <TextInput source="firstname" label="Имя" validate={validateName}/>
+            <TextInput source="lastname" label="Фамилия" validate={validateName}/>
+            <TextInput source="phone" label="Телефон" validate={validatePhone}/>
+            <TextInput source="roomNumber" label="Помещение" validate={validateRoomNumber} />
 
 
         </SimpleForm>
@@ -107,8 +106,8 @@ export const UserCreate = props => (
 
     <Create {...props}>
         <SimpleForm>
-            <TextInput source="firstname" label="Имя" validate={validateFirstName}/>
-            <TextInput source="lastname" label="Фамилия" validate={validateLastName}/>
+            <TextInput source="firstname" label="Имя" validate={validateName}/>
+            <TextInput source="lastname" label="Фамилия" validate={validateName}/>
             <TextInput source="phone" label="Телефон" validate={validatePhone}/>
             <TextInput source="roomNumber" label="Помещение" validate={validateRoomNumber}/>
 

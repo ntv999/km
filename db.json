@@ -127,7 +127,7 @@
 ],
 
  "controllers": [{
-			"id": "CACA",
+			"id": 123,
 	 		"isOnline": true,
 			"profile": {
     			"id": "4343",
@@ -138,7 +138,7 @@
 			},
 			
 			{
-			"id": "CACA-FF",
+			"id": 124,
 	 		"isOnline": true,
 			"profile": {
     			"id": "4343",

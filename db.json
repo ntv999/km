@@ -134,7 +134,8 @@
     			"controllerNickname": "43434",
     			"roleId": 3
 			},
-			"numOfGates": 4
+			"numOfGates": 4,
+	 		"numOfUsers": 10
 			},
 			
 			{
@@ -145,7 +146,9 @@
     			"controllerNickname": "43434",
     			"roleId": 3
 			},
-			"numOfGates": 2
+			"numOfGates": 2,
+			"numOfUsers": 4
+	
 			}
 			
 ],

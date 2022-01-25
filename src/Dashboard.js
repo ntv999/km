@@ -21,7 +21,7 @@ export default () => (
     <div style={styles.flex}>
                 <div style={styles.leftCol}>
                     <div style={styles.flex}>
-                        <SystemStatus value={'Online'} />
+                        <SystemStatus value={1} />
                         <Spacer />
                         <UserAmount value={'7'} />
                         <Spacer />

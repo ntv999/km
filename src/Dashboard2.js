@@ -18,30 +18,32 @@ const styles = {
 
 const Spacer = () => <span style={{ width: '1em' }} />;
 
+const Controller = localStorage.getItem('controllerId');
+
+
   const Dashboard2 = ( userId ) => {
     const { data, loading, error } = useQuery({ 
         type: 'getOne',
         resource: 'controllers',
-        payload: { id: '123' }
+        payload: { id: Controller }
     });
 
     if (loading) return <Loading />;
     if (error) return <Error />;
     if (!data) return null;
 
-    console.log(userId);
 
     return (
         <div style={styles.flex}>
                 <div style={styles.leftCol}>
                     <div style={styles.flex}>
-                        <SystemStatus value={'Online'} />
+                        <SystemStatus value={data.isOnline} />
                         <Spacer />
-                        <UserAmount value={data.numOfGates} />
+                        <UserAmount value={data.numOfUsers} />
                         <Spacer />
-                        <DoorAmount value={data.id} />
+                        <DoorAmount value={data.numOfGates} />
                         <Spacer />
-                        <ControlleNickname value={"Мстиславца 15"} />
+                        <ControlleNickname value={data.profile.controllerNickname} />
                     </div>
                     <div style={styles.singleCol}>
                         Lorem ipsum

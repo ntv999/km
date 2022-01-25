@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { FC, createElement } from 'react';
+import {  createElement } from 'react';
 import { Card, Box, Typography, Divider } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
@@ -11,7 +11,7 @@ import { ReactNode } from 'react';
 
 export const useStyles = makeStyles(theme => ({
     card: {
-        minHeight: 52,
+        minHeight: 60,
         display: 'flex',
         flexDirection: 'column',
         flex: '1',
@@ -28,7 +28,7 @@ export const useStyles = makeStyles(theme => ({
         justifyContent: 'space-between',
         alignItems: 'center',
         '& .icon': {
-            color: theme.palette.type === 'dark' ? 'inherit' : '#24abdc',
+            color: '#24abdc',
         },
     }),
     title: {},

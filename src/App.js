@@ -16,7 +16,7 @@ import russianMessages from 'ra-language-russian';
 const dataProvider = jsonServerProvider('https://my-json-server.typicode.com/ntv999/km');
 
 
-localStorage.setItem('controllerId', rememberMe);
+localStorage.setItem('controllerId', 'cdf5-ssgg-aaa');
 
 const i18nProvider = polyglotI18nProvider(() => russianMessages, 'ru');
 const App = () => (
@@ -32,3 +32,5 @@ const App = () => (
 );
 
 export default App;
+
+

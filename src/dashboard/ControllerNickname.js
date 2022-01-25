@@ -11,7 +11,7 @@ const ControllerNickname = (props) => {
         <CardWithIcon
             to="/settings"
             icon={HomeIcon}
-            title="Название контроллера"
+            title="Контроллер"
             subtitle={value}
         />
     );

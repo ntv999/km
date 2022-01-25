@@ -35,7 +35,6 @@ export const UserList = props => (
             <TextField source="phone" label="Телефон"/>
             <TextField source="roomNumber" label="Помещение" />
             <TextField source="lastActivity.date" label="Активность" />
-            <ShowButton />
             <EditButton />
         </Datagrid>
     </List>
@@ -89,11 +88,31 @@ export const UserEdit = props => (
 
     <Edit title={<UserTitle />} {...props}>
         <SimpleForm>
-             <TextInput disabled source="id" label="ID"/>
-            <TextInput source="firstname" label="Имя" validate={validateName}/>
-            <TextInput source="lastname" label="Фамилия" validate={validateName}/>
-            <TextInput source="phone" label="Телефон" validate={validatePhone}/>
-            <TextInput source="roomNumber" label="Помещение" validate={validateRoomNumber} />
+        <Grid container spacing={2}>
+            <Grid item xs={4}>   
+            <TextInput disabled source="id" label="ID"/>
+            </Grid>
+            <Grid item xs={4}>
+            <TextInput source="firstname" label="Имя"/>
+            </Grid>
+            <Grid item xs={4}>
+            <TextInput source="lastname" label="Фамилия"/>
+            </Grid>
+            <Grid item xs={4}>
+            <TextInput source="phone" label="Телефон"/>
+            </Grid>
+            <Grid item xs={4}>
+            <TextInput source="roomNumber" label="Помещение" />
+            </Grid>
+            <Grid item xs={4}>
+                <Labeled label="Роль">
+            <MyRoleField source="roleId" label="Роль" />
+                </Labeled>
+            
+            </Grid>
+
+        
+         </Grid>  
 
 
         </SimpleForm>

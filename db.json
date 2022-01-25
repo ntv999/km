@@ -131,7 +131,7 @@
 	 		"isOnline": true,
 			"profile": {
     			"id": "4343",
-    			"controllerNickname": "43434",
+    			"controllerNickname": "Бурдейного 20",
     			"roleId": 3
 			},
 			"numOfGates": 4,
@@ -140,10 +140,10 @@
 			
 			{
 			"id": "cdf5-ssgg-aaa",
-	 		"isOnline": true,
+	 		"isOnline": false,
 			"profile": {
     			"id": "4343",
-    			"controllerNickname": "43434",
+    			"controllerNickname": "Мстиславца 15",
     			"roleId": 3
 			},
 			"numOfGates": 2,

@@ -6,7 +6,7 @@ import { UserEdit, UserList, UserCreate, UserShow } from './users';
 import { GateList } from './gates';
 
 import UserIcon from '@material-ui/icons/Group';
-import Dashboard from './Dashboard';
+import Dashboard2 from './Dashboard2';
 
 import jsonServerProvider from 'ra-data-json-server';
 
@@ -15,16 +15,18 @@ import russianMessages from 'ra-language-russian';
 
 const dataProvider = jsonServerProvider('https://my-json-server.typicode.com/ntv999/km');
 
-const i18nProvider = polyglotI18nProvider(() => russianMessages, 'ru');
 
+localStorage.setItem('controllerId', rememberMe);
+
+const i18nProvider = polyglotI18nProvider(() => russianMessages, 'ru');
 const App = () => (
     <Admin 
     i18nProvider={i18nProvider}
     dataProvider={dataProvider} 
-    dashboard={Dashboard}
+    dashboard={Dashboard2}
 
     >
-        <Resource name="profiles" options={{ label: 'Пользователи' }} show={UserShow} list={UserList} edit={UserEdit} create={UserCreate} icon={UserIcon}/>
+        <Resource name="profiles" options={{ label: 'Пользователи' }}  list={UserList} edit={UserEdit} create={UserCreate} icon={UserIcon}/>
         <Resource name="gates" options={{ label: 'Двери' }} list={GateList} />
   </Admin>
 );

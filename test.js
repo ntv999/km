@@ -13,4 +13,3 @@ const UserProfile = ({ record }) => {
     return <div>User {data.username}</div>;
 };
 
-console.log("dff");

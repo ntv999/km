@@ -20,7 +20,7 @@ export const useStyles = makeStyles(theme => ({
             color: 'inherit',
         },
     },
-    main: (props) => ({
+    main: {
         overflow: 'inherit',
         padding: 16,
         
@@ -30,7 +30,7 @@ export const useStyles = makeStyles(theme => ({
         '& .icon': {
             color: '#24abdc',
         },
-    }),
+    },
     title: {},
 }));
 

@@ -5,6 +5,7 @@ import UserAmount from './dashboard/UserAmount';
 import DoorAmount from './dashboard/DoorAmount';
 import ControlleNickname from './dashboard/ControllerNickname';
 import { useQuery, Loading, Error } from 'react-admin';
+import ControllerNickname from './dashboard/ControllerNickname';
 
 
 
@@ -46,7 +47,7 @@ const Controller = localStorage.getItem('controllerId');
                         <ControlleNickname value={data.profile.controllerNickname} />
                     </div>
                     <div style={styles.singleCol}>
-                        Lorem ipsum
+                        <ControllerNickname value={213} />
                     </div>
                 </div> 
     </div>  

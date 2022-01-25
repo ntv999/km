@@ -7,6 +7,7 @@ import { GateList } from './gates';
 
 import UserIcon from '@material-ui/icons/Group';
 import Dashboard2 from './Dashboard2';
+import MyLayout from "./MyLayout";
 
 import jsonServerProvider from 'ra-data-json-server';
 
@@ -21,6 +22,7 @@ localStorage.setItem('controllerId', 'cdf5-ssgg-aaa');
 const i18nProvider = polyglotI18nProvider(() => russianMessages, 'ru');
 const App = () => (
     <Admin 
+    layout={MyLayout}
     i18nProvider={i18nProvider}
     dataProvider={dataProvider} 
     dashboard={Dashboard2}

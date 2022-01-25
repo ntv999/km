@@ -127,7 +127,7 @@
 ],
 
  "controllers": [{
-			"id": 123,
+			"id": "cdf4-ssgg-aaa",
 	 		"isOnline": true,
 			"profile": {
     			"id": "4343",
@@ -138,7 +138,7 @@
 			},
 			
 			{
-			"id": 124,
+			"id": "cdf5-ssgg-aaa",
 	 		"isOnline": true,
 			"profile": {
     			"id": "4343",

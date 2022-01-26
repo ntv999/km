@@ -4,7 +4,7 @@ import SystemStatus from './dashboard/SystemStatus';
 import UserAmount from './dashboard/UserAmount';
 import DoorAmount from './dashboard/DoorAmount';
 import ControlleNickname from './dashboard/ControllerNickname';
-
+import { useQuery, Loading, Error, useGetList } from 'react-admin';
 
 
 const styles = {
@@ -17,21 +17,40 @@ const styles = {
 
 const Spacer = () => <span style={{ width: '1em' }} />;
 
-export default () => (
-    <div style={styles.flex}>
+const Controller = localStorage.getItem('controllerId');
+
+
+
+  const Dashboard = ( userId ) => {
+    const { data, loading, error } = useQuery({ 
+        type: 'getOne',
+        resource: 'controllers',
+        payload: { id: Controller }
+    });
+
+    if (loading) return <Loading />;
+    if (error) return <Error />;
+    if (!data) return null;
+
+
+    return (
+        <div style={styles.flex}>
                 <div style={styles.leftCol}>
                     <div style={styles.flex}>
-                        <SystemStatus value={1} />
+                        <SystemStatus value={data.isOnline} />
                         <Spacer />
-                        <UserAmount value={'7'} />
+                        <UserAmount value={data.numOfUsers} />
                         <Spacer />
-                        <DoorAmount value={2} />
+                        <DoorAmount value={data.numOfGates} />
                         <Spacer />
-                        <ControlleNickname value={"Мстиславца 15"} />
+                        <ControlleNickname value={data.profile.controllerNickname} />
                     </div>
                     <div style={styles.singleCol}>
-                        Lorem ipsum
+                        
                     </div>
                 </div> 
     </div>  
-);
+    )
+};
+
+export default Dashboard;

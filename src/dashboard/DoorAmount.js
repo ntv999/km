@@ -1,6 +1,6 @@
 import * as React from 'react';
-import MeetingRoomIcon from '@mui/icons-material/MeetingRoom';
 import CardWithIcon from './CardWithIcon';
+import SensorDoor from '@mui/icons-material/SensorDoor';
 
 
 
@@ -9,7 +9,7 @@ const DoorAmount = (props) => {
     return (
         <CardWithIcon
             to="/gates"
-            icon={MeetingRoomIcon}
+            icon={SensorDoor}
             title="Точки входа"
             subtitle={value}
         />

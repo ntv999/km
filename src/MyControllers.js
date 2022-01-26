@@ -1,32 +1,26 @@
-import { useGetList } from 'react-admin';
+import { useList, ListContextProvider, Datagrid, TextField } from "react-admin";
 
-const ConfigurationMenu = (props) => {
-    const { value, id } = props;
-    return (
-<MenuItemLink
-    
-    to={id}
-    primaryText={value}
-    leftIcon={<SettingsIcon />}
-    // close the menu on click
-/>
-)
-};
+const data = [
+    { id: 1, name: 'Arnold' },
+    { id: 2, name: 'Sylvester' },
+    { id: 3, name: 'Jean-Claude' },
+]
+const ids = [1, 2, 3];
 
-const MyControllers = () => {
-    const { data, ids, loading, error } = useGetList(
-        'controllers'
+ const ContList = () => {
+    const listContext = useList({
+        data,
+        ids
         
-    );
-    if (loading) { return <Loading />; }
-    if (error) { return <p>ERROR</p>; }
+    });
     return (
-
-            ids.map(id =>
-                <ConfigurationMenu id={id} value={data[id].name} />
-            )
-        
+        <ListContextProvider value={listContext}>
+            <Datagrid>
+                <TextField source="id" />
+                <TextField source="name" />
+            </Datagrid>
+        </ListContextProvider>
     );
 };
 
-export default MyControllers;
+export default ContList;

@@ -1,12 +1,14 @@
 // in src/App.js
 import * as React from "react";
-import { Admin, Resource } from 'react-admin';
+import { Admin, Resource, ListGuesser, Error, Loading } from 'react-admin';
 import { UserEdit, UserList, UserCreate, UserShow } from './users';
 
 import { GateList } from './gates';
 
 import UserIcon from '@material-ui/icons/Group';
-import Dashboard2 from './Dashboard2';
+import SensorDoorIcon from '@mui/icons-material/SensorDoor';
+
+import Dashboard from './Dashboard';
 import MyLayout from "./MyLayout";
 
 import jsonServerProvider from 'ra-data-json-server';
@@ -17,7 +19,9 @@ import russianMessages from 'ra-language-russian';
 const dataProvider = jsonServerProvider('https://my-json-server.typicode.com/ntv999/km');
 
 
-localStorage.setItem('controllerId', 'cdf5-ssgg-aaa');
+localStorage.setItem('controllerId', '48edd5d0-4343d');
+
+
 
 const i18nProvider = polyglotI18nProvider(() => russianMessages, 'ru');
 const App = () => (
@@ -25,11 +29,12 @@ const App = () => (
     layout={MyLayout}
     i18nProvider={i18nProvider}
     dataProvider={dataProvider} 
-    dashboard={Dashboard2}
+    dashboard={Dashboard}
 
     >
         <Resource name="profiles" options={{ label: 'Пользователи' }}  list={UserList} edit={UserEdit} create={UserCreate} icon={UserIcon}/>
-        <Resource name="gates" options={{ label: 'Двери' }} list={GateList} />
+        <Resource name="gates" options={{ label: 'Двери' }} list={GateList} icon={SensorDoorIcon}/>
+        <Resource name="controllers" />
   </Admin>
 );
 

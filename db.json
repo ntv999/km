@@ -127,7 +127,7 @@
 ],
 
  "controllers": [{
-			"id": "48edd5d0",
+			"id": "48edd5d0-4343d",
 	 		"name": "KM 12345",
 	 		"isOnline": true,
 			"profile": {
@@ -140,7 +140,7 @@
 			},
 			
 			{
-			"id": "f7248740",
+			"id": "f7248740-4343d",
 			"name": "KM 23456",	
 	 		"isOnline": false,
 			"profile": {

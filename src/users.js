@@ -1,6 +1,9 @@
 // in src/users.js
 import * as React from "react";
-import { List, Datagrid, TextField, EditButton, Edit, Create, SimpleForm, Labeled, TextInput, Show, ShowButton, SimpleShowLayout } from 'react-admin';
+import { List, Datagrid, TextField, EditButton, Edit, Create, SimpleForm, Labeled, TextInput, Show, SaveButton, SimpleShowLayout, DeleteButton } from 'react-admin';
+import { Toolbar } from 'react-admin';
+import Button from '@material-ui/core/Button';
+
 import SendButton from './SendButton';
 import Grid from '@mui/material/Grid';
 import MyRoleField from "./MyRoleField";
@@ -83,26 +86,35 @@ export const UserShow = (props) => (
     </Show>
 );
 
+const PostEditToolbar = props => (
+    <Toolbar {...props} >
+        <SaveButton />
+        <Button color="primary" >Отправить пароль</Button>
+        <DeleteButton/>
+
+    </Toolbar>
+);
+
 export const UserEdit = props => (
 
 
-    <Edit title={<UserTitle />} {...props}>
-        <SimpleForm>
+    <Edit title={<UserTitle />}  {...props}>
+        <SimpleForm toolbar={<PostEditToolbar />}>
         <Grid container spacing={2}>
             <Grid item xs={4}>   
             <TextInput disabled source="id" label="ID"/>
             </Grid>
             <Grid item xs={4}>
-            <TextInput source="firstname" label="Имя"/>
+            <TextInput source="firstname" label="Имя" validate={validateName}/>
             </Grid>
             <Grid item xs={4}>
-            <TextInput source="lastname" label="Фамилия"/>
+            <TextInput source="lastname" label="Фамилия" validate={validateName}/>
             </Grid>
             <Grid item xs={4}>
-            <TextInput source="phone" label="Телефон"/>
+            <TextInput source="phone" label="Телефон" validate={validatePhone}/>
             </Grid>
             <Grid item xs={4}>
-            <TextInput source="roomNumber" label="Помещение" />
+            <TextInput source="roomNumber" label="Помещение" validate={validateRoomNumber}/>
             </Grid>
             <Grid item xs={4}>
                 <Labeled label="Роль">
@@ -113,7 +125,6 @@ export const UserEdit = props => (
 
         
          </Grid>  
-
 
         </SimpleForm>
     

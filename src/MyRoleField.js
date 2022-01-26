@@ -1,4 +1,4 @@
-// in src/MyUrlField.js
+// in src/MyRoleField.js
 import { useRecordContext } from 'react-admin';
 
 const MyRoleField = ({ source }) => {

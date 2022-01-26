@@ -127,7 +127,7 @@
 ],
 
  "controllers": [{
-			"id": "cdf4-ssgg-aaa",
+			"id": 1,
 	 		"name": "KM 12345",
 	 		"isOnline": true,
 			"profile": {
@@ -140,7 +140,7 @@
 			},
 			
 			{
-			"id": "cdf5-ssgg-aaa",
+			"id": 2,
 			"name": "KM 23456",	
 	 		"isOnline": false,
 			"profile": {

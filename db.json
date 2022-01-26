@@ -160,7 +160,7 @@
 				  "id": 1,
     			"name": "Door",
     			"state": 2,
-    			"isOnline": true,
+    			"isActive": true,
     			
     			"relay": 2
 			
@@ -169,8 +169,8 @@
 			
 				"id": 2,
     			"name": "Door",
-    			"state": 2,
-    			"isOnline": true,
+    			"state": 5,
+    			"isActive": true,
     			
     			"relay": 2
 			}
